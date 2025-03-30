@@ -44,6 +44,7 @@ body {
 .nav .nav-links {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .nav-links li {
@@ -118,7 +119,7 @@ body {
     align-items: center;
 }
 
-/* General styling for all sections */
+/* General styling for the rest of the sections */
 main {
     width: 100%;
     display: flex;
@@ -129,7 +130,7 @@ main {
 .section-one,
 .section-two,
 .section-three {
-    height: 500px;
+    min-height: 500px;
     width: 70%;
 }
 
@@ -151,6 +152,8 @@ main {
 .section-one .content .container {
     max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
     justify-content: center;
     gap: 40px;
 }
@@ -162,7 +165,7 @@ main {
 .box {
    height: 175px; 
    width: 175px;
-   border: #3882F6 solid 5px;
+   border: #3882F6 solid 4px;
    border-radius: 16px;
    margin-bottom: 8px;
 }
@@ -178,4 +181,28 @@ main {
 .section-two {
     width: 100%;
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two div {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-two div blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 250;
+    color: #1F2937;
+}
+
+.section-two div .cite {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1F2937;
+    padding-right: 30px;
 }
